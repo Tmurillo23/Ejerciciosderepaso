@@ -1,6 +1,9 @@
 from math import pi
 
-radio = int(input("De el radio del círculo: "))
-def area_circulo(radio):
-    area = pi*radio**2
-    return area
+
+def area_circulo(radio=int(input("Diga el radio del circulo: "))):
+    return pi * radio ** 2
+
+
+area = area_circulo()
+print(f"El area del círculo es: {area} unidades cuadradas")
